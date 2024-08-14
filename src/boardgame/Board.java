@@ -35,10 +35,13 @@ public class Board {
 		return pieces[row][column];
 	}
 	
-	public Piece piece(Position posicion) {
-		return pieces[posicion.getRow()][posicion.getColumn()];
+	public Piece piece(Position position) {
+		return pieces[position.getRow()][position.getColumn()];
 	}
 	
-	
+	public void placePiece(Piece piece, Position position) {
+		pieces[position.getRow()][position.getColumn()] = piece;
+		piece.position = position;
+	}
 	
 }

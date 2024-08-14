@@ -2,7 +2,7 @@ package boardgame;
 
 public class Piece {
 	
-	protected Position posicion;
+	protected Position position;
 	private Board board;
 	
 	public Piece() {
@@ -10,7 +10,7 @@ public class Piece {
 
 	public Piece(Board board) {
 		this.board = board;
-		posicion = null;
+		position = null;
 	}
 
 	protected Board getBoard() {
